@@ -35,6 +35,14 @@
   "categories": [
     "Programming Languages"
   ],
+
+  "galleryBanner": {
+    "color": "#111827",
+    "theme": "dark"
+},
+
+"preview": true,
+
   "contributes": {
     "languages": [{
       "id": "veda",
