@@ -18,6 +18,17 @@
 ],
 "icon": "images/icon.png",
 
+"repository": {
+  "type": "git",
+  "url": "https://github.com/sanpitpatro-1611/veda-language-support.git"
+},
+
+"homepage": "https://github.com/sanpitpatro-1611/veda-language-support",
+
+"bugs": {
+  "url": "https://github.com/sanpitpatro-1611/veda-language-support/issues"
+},
+
   "engines": {
     "vscode": "^1.125.0"
   },
