@@ -5,33 +5,36 @@
   "version": "1.0.0-alpha",
 
   "license": "MIT",
-"author": {
-  "name": "Sanpit Patro"
-},
-"keywords": [
-  "veda",
-  "programming-language",
-  "language",
-  "compiler",
-  "hexavora",
-  "syntax-highlighting"
-],
-"icon": "images/icon.png",
+  "author": {
+    "name": "Sanpit Patro"
+  },
 
-"repository": {
-  "type": "git",
-  "url": "https://github.com/sanpitpatro-1611/veda-language-support.git"
-},
+  "keywords": [
+    "veda",
+    "programming-language",
+    "language",
+    "compiler",
+    "hexavora",
+    "syntax-highlighting"
+  ],
 
-"homepage": "https://github.com/sanpitpatro-1611/veda-language-support",
+  "icon": "images/icon.png",
 
-"bugs": {
-  "url": "https://github.com/sanpitpatro-1611/veda-language-support/issues"
-},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanpitpatro-1611/veda-language-support.git"
+  },
+
+  "homepage": "https://github.com/sanpitpatro-1611/veda-language-support",
+
+  "bugs": {
+    "url": "https://github.com/sanpitpatro-1611/veda-language-support/issues"
+  },
 
   "engines": {
     "vscode": "^1.125.0"
   },
+
   "categories": [
     "Programming Languages"
   ],
@@ -39,21 +42,40 @@
   "galleryBanner": {
     "color": "#111827",
     "theme": "dark"
-},
+  },
 
-"preview": true,
+  "preview": true,
+
+  "main": "./extension.js",
 
   "contributes": {
-    "languages": [{
-      "id": "veda",
-      "aliases": ["VEDA", "veda"],
-      "extensions": [".veda"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "veda",
-      "scopeName": "source.veda",
-      "path": "./syntaxes/veda.tmLanguage.json"
-    }]
+    "commands": [
+      {
+        "command": "veda.run",
+        "title": "Run VEDA"
+      }
+    ],
+
+    "languages": [
+      {
+        "id": "veda",
+        "aliases": [
+          "VEDA",
+          "veda"
+        ],
+        "extensions": [
+          ".veda"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+
+    "grammars": [
+      {
+        "language": "veda",
+        "scopeName": "source.veda",
+        "path": "./syntaxes/veda.tmLanguage.json"
+      }
+    ]
   }
 }
