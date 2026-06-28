@@ -1,0 +1,40 @@
+{
+  "name": "veda-language-support",
+  "displayName": "VEDA Language Support",
+  "description": "Official language support for the VEDA Programming Language with syntax highlighting and language configuration.",
+  "version": "1.0.0-alpha",
+
+  "license": "MIT",
+"author": {
+  "name": "Sanpit Patro"
+},
+"keywords": [
+  "veda",
+  "programming-language",
+  "language",
+  "compiler",
+  "hexavora",
+  "syntax-highlighting"
+],
+"icon": "images/icon.png",
+
+  "engines": {
+    "vscode": "^1.125.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "veda",
+      "aliases": ["VEDA", "veda"],
+      "extensions": [".veda"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "veda",
+      "scopeName": "source.veda",
+      "path": "./syntaxes/veda.tmLanguage.json"
+    }]
+  }
+}
